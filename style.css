@@ -21,7 +21,7 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: var(--silver-background-color); /* Remove this line. It's just an example to show you how to use the color variables */
+    background-color: var(--white-color); /* Remove this line. It's just an example to show you how to use the color variables */
 }
 
 /* The rest of your CSS goes here */
@@ -30,34 +30,27 @@ body {
 *{
     text-decoration: none;
 }
-section .nav-bar{
-    background-color: #F5F7FA;
-    padding-inline: 1em;
-    padding-top: 2em;
-    
-}
-section .nav-div{
+.nav-container{
+    max-width: 1200px;
+    margin-inline: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.logo a{
-    color: #263238;
-    width: 6.96em;
-    height: 1.29em;
+.nav-bar-links a{
+    color: #4D4D4D;
+    text-decoration: none;
+    font-size: 0.85em;
+    padding-right: 5em;
+}
+ 
+nav{
+    background-color: #FFFFFF;
+    padding: 1em;
+    
 
 }
-li{
-    list-style: none;
-    display: inline-block;
-    margin-inline: 3em;
-}
-li a{
-    color: #18191F;
-    font-size: 1em;
-    font-weight:500;
-    margin-right: 0.5em;
-}
+  
 button.login{
 margin-left: 1em;
 border-radius: 0.5em;
@@ -81,10 +74,14 @@ button.Sign-Up a{
     font-weight: 500;
     font-size: 0.875em;
 }
-section .space-1{
-    background-color: red;
-}
+
 /* BOX 2 */
+section .box-2-container{
+    width: 90em;
+    height: 25.75em;
+    margin-inline: 2em;
+    background-color:#F5F7FA;
+}
 section .box-2{
     display: flex;
     align-items: center;
@@ -92,6 +89,9 @@ section .box-2{
     padding-inline: 4em;
     padding-block: 2em;
     margin-inline: 2em;
+    background-color:#F5F7FA ;
+    /* width: 90em;
+    gap: 10em; */
 }
 section .box-2-text .h1{
     font-size: 4em;
@@ -118,8 +118,17 @@ button.Register{
         font-size: 0.875em;
     }
     /* box 3 */
+    section .box-3-4{
+        width: 90em;
+        height: 11.875em;
+        background-color: #FFFFFF;
+        margin-inline: 2em;
+    }
     section .box-3{
         padding: 2em;
+        margin-inline: 2em;
+        background-color: #FFFFFF;
+       
     }
     section .box-3 h2{
         display: flex;
@@ -128,6 +137,7 @@ button.Register{
     section .box-3 p{
         display: flex;
         justify-content: center;
+        color:#717171;
     }
     /* box 4 */
     section .box-4-icons{
@@ -135,18 +145,16 @@ button.Register{
         align-items: center;
         justify-content: space-between;
         padding: 1em;
+        padding-inline: 8em;
+        background-color: #FFFFFF;
     
     }
-     section .box-4-icons li{
-        list-style: none;
-        display: inline-block;
-        margin-right: 5em;
-        padding-right: 0;
-        padding-left: 1em;
-    }
+      
     /* box 5 */
     section .box-5{
         padding: 2em;
+        margin-inline: 2em;
+        background-color: #FFFFFF;
     }
     section .box-5 h2{
         display: flex;
@@ -155,6 +163,8 @@ button.Register{
     section .box-5 p{
         display: flex;
         justify-content: center;
+        color: #717171;
+        padding-block: 1em;
     }
     /* box 6 */
     section .box-6{
@@ -162,10 +172,15 @@ button.Register{
         align-items: center;
         justify-content: space-between;
         padding-inline: 8em;
-        gap: 8em;
+        gap: 5em;
+        margin-inline: 2em;
+        background-color: #FFFFFF;
     }
     section .box-6 h3{
         align-self: center;
+    }
+    section .box-6 p{
+        color: #717171;
     }
     /* box 7 */
     section .box-7{
@@ -175,12 +190,18 @@ button.Register{
         padding-inline: 4em;
         padding-block: 2em;
         margin-inline: 2em;
+        width: 90em;
+        height: 27.06em;
+        background-color: #FFFFFF;
+        
     }
     section .box-7-text .h2-box-7{
-        
+        font-size: 2.25em;
+        color: #4D4D4D;
     } 
     section .box-7-text .h3-box-7{
-         color: #4CAF4F;
+         font-size: 2.25em;
+         color: #4D4D4D;
     }
     section .box-7-text p{
         color: #717171;
@@ -205,8 +226,13 @@ button.Register{
             padding-inline: 7em;
             padding-block: 3em;
             background-color: #F5F7FA;
+            width: 90em;
+            height: 18em;
+            margin-inline: 2em;
         }
-        
+        section .box-8-parent-1-h2-1{
+            color: #4CAF4F;
+        }
         section .box-8 .box-8-parent-2 .box-8-parent-2-sub-parent{
             display: flex;
             justify-content: space-between;
@@ -238,9 +264,7 @@ button.Register{
             height: 27.0875;
         }
        
-        section .box-9-text .h3-box-9{
-             color: #4CAF4F;
-        }
+         
         section .box-9-text p{
             color: #717171;
             padding-block: 1em;
@@ -263,7 +287,7 @@ button.Register{
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding-inline: 4em;
+                padding-inline: 2em;
                 padding-block: 2em;
                 margin-inline: 2em;
                 width: 90em;
@@ -295,6 +319,7 @@ button.Register{
             /* box 11 */
             section .box-11{
                 padding: 2em;
+                
             }
             section .box-11 h2{
                 display: flex;
@@ -310,6 +335,7 @@ button.Register{
             section .box-12{
                 justify-content: space-between;
                 padding-inline: 10em;
+                 
             }
             section .box-11-12{
                 width: 90em;
@@ -324,6 +350,7 @@ section .box-13{
                  height: 18.75;
                  background-color: #F5F7FA;
                  padding-block: 2em;
+                 margin-inline: 2em;
                 
                   
             }
@@ -374,6 +401,7 @@ section .box-13{
                      padding-inline: 7em;
                      padding-block: 3em;
                      width: 90em;
+                     margin-inline: 2em;
                 }
                 section .box-14 .box-14-logo-box p{
                     color: #F5F7FA;
